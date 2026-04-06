@@ -1,110 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sheraz Kamran - Web Developer</title>
-<style>
-body {
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-margin: 0;
-background: #0f172a;
-color: #e2e8f0;
-line-height: 1.6;
-}
-.container {
-max-width: 1000px;
-margin: auto;
-padding: 40px 20px;
-}
-h1 {font-size: 42px; margin-bottom: 5px;}
-h2 {color: #38bdf8; margin-top: 40px;}
-.card {
-background: #020617;
-padding: 20px;
-border-radius: 10px;
-margin-top: 15px;
-}
-a {color: #38bdf8; text-decoration: none;}
-.skills span{
-display:inline-block;
-background:#020617;
-padding:8px 12px;
-margin:5px;
-border-radius:6px;
-}
-</style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sheraz Kamran — Senior Web Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #020617;
+            --card: #020617;
+            --soft: #0f172a;
+            --border: #1e293b;
+            --text: #e2e8f0;
+            --muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent2: #22c55e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Inter, system-ui, -apple-system;
+            background: linear-gradient(180deg, #020617 0%, #020617 100%);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            padding: 60px 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            color: var(--accent);
+            font-size: 18px;
+            margin-top: 8px;
+        }
+
+        .meta {
+            margin-top: 20px;
+            color: var(--muted);
+        }
+
+        .meta span {
+            margin-right: 20px;
+        }
+
+        .section {
+            margin-top: 60px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .card {
+            background: linear-gradient(180deg, #020617 0%, #020617 100%);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 25px;
+            transition: 0.25s ease;
+        }
+
+        .card:hover {
+            border-color: #334155;
+            transform: translateY(-2px);
+        }
+
+        .grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .grid-2 {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .experience-title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .company {
+            color: var(--accent);
+            margin-top: 4px;
+        }
+
+        .date {
+            color: var(--muted);
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 18px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #cbd5e1;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: var(--soft);
+            padding: 8px 14px;
+            border-radius: 30px;
+            font-size: 14px;
+            border: 1px solid var(--border);
+        }
+
+        .footer {
+            margin-top: 80px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 18px;
+            background: var(--accent);
+            color: black;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        .button.secondary {
+            background: transparent;
+            color: var(--text);
+            border: 1px solid var(--border);
+            margin-left: 10px;
+        }
+
+        @media(max-width:768px) {
+
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+        }
+    </style>
 </head>
 
 <body>
-<div class="container">
 
-<h1>Sheraz Kamran</h1>
-<p>Senior Web Developer | Laravel | SaaS Architect</p>
+    <div class="container">
 
-<p>
-📍 Islamabad, Pakistan<br>
-📧 shiraz.kamran729@gmail.com<br>
-📞 +92 312 573 6381
-</p>
+        <header>
+            <h1>Sheraz Kamran</h1>
+            <div class="subtitle">Senior Web Developer • Laravel • SaaS Architect</div>
 
-<h2>Summary</h2>
-<div class="card">
-Software Engineer with 5+ years of experience developing scalable SaaS and enterprise
-applications. Led development of cloud-based hospitality ERP used by 80+ hotels across
-Pakistan and Middle East. Skilled in backend architecture, cloud deployments, CI/CD,
-and DevOps practices.
-</div>
+            <div class="meta">
+                <span>📍 Islamabad, Pakistan</span>
+                <span>📧 shiraz.kamran729@gmail.com</span>
+                <span>📞 +92 312 573 6381</span>
+            </div>
 
-<h2>Experience</h2>
-<div class="card">
-<h3>Lead Software Engineer — Ascendant Pvt Ltd</h3>
-<p>2021 — Present</p>
+            <a class="button" href="#">Download Resume</a>
+            <a class="button secondary" href="https://github.com/" target="_blank">GitHub</a>
 
-<ul>
-<li>Led development of cloud-based hospitality ERP system</li>
-<li>Built reservations, POS, finance, CRM modules</li>
-<li>Implemented CI/CD deployment pipelines</li>
-<li>Managed cloud servers and Linux infrastructure</li>
-<li>Docker containerized environments</li>
-<li>Integrated payment gateways & third-party APIs</li>
-<li>Mentored junior developers</li>
-</ul>
+        </header>
 
-<p>
-Project: <a href="https://ascendant.travel/">ascendant.travel</a>
-</p>
-</div>
+        <section class="section">
+            <div class="section-title">About</div>
+            <div class="card">
+                Software Engineer with 5+ years of experience developing scalable SaaS and enterprise applications. Led
+                development of a cloud-based hospitality ERP used by 80+ hotels across Pakistan and Middle East.
+                Experienced in backend architecture, CI/CD, cloud infrastructure, and DevOps practices.
+            </div>
+        </section>
 
-<h2>Skills</h2>
-<div class="skills">
-<span>Laravel</span>
-<span>PHP</span>
-<span>MySQL</span>
-<span>JavaScript</span>
-<span>jQuery</span>
-<span>MERN Stack</span>
-<span>TALL Stack</span>
-<span>REST APIs</span>
-<span>Docker</span>
-<span>CI/CD</span>
-<span>Cloud Deployment</span>
-<span>Git & GitHub</span>
-</div>
+        <section class="section">
+            <div class="section-title">Experience</div>
 
-<h2>Education</h2>
-<div class="card">
-BS Software Engineering  
-COMSATS University Islamabad – Attock Campus  
-2017 — 2020
-</div>
+            <div class="grid">
+                <div class="card">
+                    <div class="experience-title">Lead Software Engineer</div>
+                    <div class="company">Ascendant Pvt Ltd</div>
+                    <div class="date">2021 — Present</div>
 
-<h2>Contact</h2>
-<div class="card">
-Email: shiraz.kamran729@gmail.com<br>
-Phone: +92 312 573 6381
-</div>
+                    <ul>
+                        <li>Led development of cloud-based hospitality ERP system</li>
+                        <li>Built reservations, POS, finance and CRM modules</li>
+                        <li>Implemented CI/CD pipelines and deployments</li>
+                        <li>Managed Linux cloud infrastructure</li>
+                        <li>Docker containerized environments</li>
+                        <li>Integrated payment gateways and third‑party APIs</li>
+                        <li>Mentored developers and managed releases</li>
+                    </ul>
 
-</div>
+                    <br>
+                    <a href="https://ascendant.travel/" target="_blank">View Project →</a>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">Skills</div>
+            <div class="card">
+                <div class="skills">
+                    <div class="skill">Laravel</div>
+                    <div class="skill">PHP</div>
+                    <div class="skill">MySQL</div>
+                    <div class="skill">JavaScript</div>
+                    <div class="skill">jQuery</div>
+                    <div class="skill">REST APIs</div>
+                    <div class="skill">SaaS Architecture</div>
+                    <div class="skill">Docker</div>
+                    <div class="skill">CI/CD</div>
+                    <div class="skill">Cloud Servers</div>
+                    <div class="skill">Git</div>
+                    <div class="skill">TALL Stack</div>
+                    <div class="skill">MERN Stack</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">Education</div>
+            <div class="card">
+                BS Software Engineering
+                <br>
+                COMSATS University Islamabad — Attock Campus
+                <br>
+                2017 — 2020
+            </div>
+        </section>
+
+        <div class="footer">
+            © 2026 Sheraz Kamran — Built with GitHub Pages
+        </div>
+
+    </div>
+
 </body>
+
 </html>
